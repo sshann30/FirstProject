@@ -1,6 +1,6 @@
 #header{
     color:white;
-    background-color:cornflowerblue;
+    background-color:#1a2737;
     text-align: center;
     border: none;
     margin: 0 auto;
@@ -9,11 +9,11 @@
 .card{
     margin: 20px auto;
     width: 90%;
-    border: 1px solid cornflowerblue;
+    border: 1px solid #1a2737;
 }
 .card-header{
     color: white;
-    background-color: cornflowerblue;
+    background-color: #1a2737;
 }
 
 .row{
@@ -30,7 +30,7 @@ body {
   }
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url(../assets/images/Screen\ Shot\ 2018-12-11\ at\ 12.53.33\ PM.png);
+    background-image: url("images/bluewood.jpg");
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
