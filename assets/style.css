@@ -26,7 +26,7 @@ hr{
     margin-bottom: 0.2rem;
 }
 body {
-    background-image: url(../assets/images/spring.png)
+    background-image: url("images/lines.jpeg")
   }
 .jumbotron {
     margin-bottom: 0px;
@@ -36,3 +36,6 @@ body {
     background-repeat: no-repeat;
     color: white;
   }
+i{
+    margin-right: 20px
+}
