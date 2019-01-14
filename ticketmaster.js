@@ -16,6 +16,7 @@ $.ajax({
     console.log(response._embedded.events)
 
   $("#TicketMaster").empty()
+  $("#myVid").empty()
 
 
     // after i pull info from ticketmaster
@@ -32,7 +33,8 @@ $.ajax({
 
       var date = events[i].dates.start.localDate ; //use moment later;
       var convertedDate = moment(date, "MM-DD-YYYY");
-      // console.log(events[i].dates.start.localDate)
+      console.log(events[i].dates.start.localDate)
+      console.log(convertedDate)
       var time = events[i].dates.start.localTime; //use moment later;
       // console.log(events[i].dates.start.localTime)
       var venue = events[i]._embedded.venues[0].name
