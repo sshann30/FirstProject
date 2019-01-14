@@ -31,10 +31,12 @@ $.ajax({
 
 
       var date = events[i].dates.start.localDate ; //use moment later;
-      var convertedDate = moment(date, "MM-DD-YYYY");
-      console.log(events[i].dates.start.localDate)
+      console.log(date)
+      var convertedDate = moment(date).format("MM-DD-YYYY");
+      // console.log(events[i].dates.start.localDate)
       console.log(convertedDate)
       var time = events[i].dates.start.localTime; //use moment later;
+      var convertedTime = moment(time, "HH:mm").format("hh:mm a")
       // console.log(events[i].dates.start.localTime)
       var venue = events[i]._embedded.venues[0].name
       // console.log(events[i]._embedded.venues[0].name)
@@ -51,7 +53,7 @@ $.ajax({
       var tr = $("<tr>");
 
       tourDateTd = $("<td>").text(convertedDate);
-      tourTimeTd = $("<td>").text(time);
+      tourTimeTd = $("<td>").text(convertedTime);
       tourVenueTd = $("<td>").text(venue);
       ticketCostTd = $("<td>").text(" Minimum: $" + costMin + "    Maximum: $" + costMax + "+");
 
