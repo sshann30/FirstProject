@@ -16,6 +16,7 @@ $.ajax({
     console.log(response._embedded.events)
 
   $("#TicketMaster").empty()
+  $("#myVid").empty()
 
 
     // after i pull info from ticketmaster
