@@ -21,7 +21,7 @@
 <!-- NAVBAR WITH SEARCH AND JUMBOTRON-->
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">APP NAME</a>
+    <a class="navbar-brand" href="#">Arti-Sense</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,25 +29,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+         <a class="nav-link" href="#">Use the search to look up your favorite artists <span class="sr-only">(current)</span></a>
           </div>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button type="button" class="btn btn-outline-light">Submit</button> 
       </form>
     </div>
@@ -58,8 +45,8 @@
   
   <div class="jumbotron">
     <div class="container text-center">
-      <h1>APP NAME</h1>      
-      <p>Cheesy catchphrase</p>
+      <h1>Arti-Sense</h1>      
+      <p>Everything about an artist, making sense</p>
     </div>
   </div>
 
@@ -69,7 +56,7 @@
     <!-- Step 1: Artists (spotify or bands in town API info goes here)-->
     <div class="card">
         <div class="card-header">
-            <b><i class="fab fa-spotify"></i>     </i>Followed Artists</b>
+            <b><i class="fab fa-youtube"></i>     </i>Followed Artists on YouTube</b>
         </div>
         <!-- Employee info goes in here -->
         <div class="card-body" id="Employees">
@@ -90,48 +77,27 @@
         </div>
     </div>
 
-    <!-- INSTAGRAM/ GIF PULLS -->
-
-    <div class="card">
-        <div class="card-header">
-            <b><i class="fab fa-instagram"></i></i>Artist Content</b>
-        </div>
-        <!-- Employee info goes in here -->
-        <div class="card-body" id="Employees">
-
-            <table class="table">
-                <thead>
-                    <tr>
-                        <!-- The scope attribute specifies that this is a header for a column -->
-                        <th scope="col">Instagram</th>
-                        
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
-    </div>
 
     <!-- THIRD ROW -->
 
     <div class="card">
         <div class="card-header">
-            <b><i class="fas fa-ticket-alt"></i></i>Artist Performances</b>
+            <b><i class="fas fa-ticket-alt"></i></i>Artist Performances via TicketMaster</b>
         </div>
         <!-- Employee info goes in here -->
-        <div class="card-body" id="Employees">
+        <div class="card-body"></div>
 
             <table class="table">
                 <thead>
                     <tr>
                         <!-- The scope attribute specifies that this is a header for a column -->
-                        <th scope="col">Tour Date</th>
-                        <th scope="col">Ticket Cost</th>
+                        <th scope="col" id="Tour Date">Tour Date</th>
+                        <th scope="col" id="Tour Time">Tour Time</th>
+                        <th scope="col" id="Tour Venue">Tour Venue</th>
+                        <th scope="col" id="Ticket Cost">Ticket Cost</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="TicketMaster">
 
                 </tbody>
             </table>
@@ -147,7 +113,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
     <!-- My JS -->
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="ticketmaster.js"></script>
 
 </body>
 
