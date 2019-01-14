@@ -47,7 +47,7 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button type="button" class="btn btn-outline-light">Submit</button> 
       </form>
     </div>
@@ -62,7 +62,6 @@
       <p>Cheesy catchphrase</p>
     </div>
   </div>
-
 
 
 
@@ -107,7 +106,7 @@
                         
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id='myVid'>
 
                 </tbody>
             </table>
@@ -140,15 +139,21 @@
 
 
 
-    <!-- FireBase -->
-    <script src="INSERT FIREBASE INFO HERE"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
+        <!--The following script needs to be linked right after jQuery-->
+        <script>jQuery.ajaxPrefilter(function (options) {
+                if (options.crossDomain && jQuery.support.cors) {
+                    options.url = 'https://uncc-cors-proxy.herokuapp.com/' + options.url;
+                }
+            });</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
     <!-- My JS -->
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="youtube.js"></script>
 
 </body>
 
 </html>
+
+
