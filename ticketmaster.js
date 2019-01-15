@@ -46,7 +46,7 @@ $("button").on("click", function () {
 
 
         if (events[i].hasOwnProperty('priceRanges')) {
-          costMin = events[i].priceRange[0].mix;
+          costMin = events[i].priceRanges[0].mix;
           costMax = events[i].priceRanges[0].max;
         } else {
           costMin = "Check Venue";
