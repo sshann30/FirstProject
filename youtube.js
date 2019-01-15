@@ -5,7 +5,7 @@ $("button").on("click", function() {
     
     
     $.ajax({
-        url: `https://www.googleapis.com/youtube/v3/search?maxResults=50&part=snippet&q=${query}&key=AIzaSyBq3lFS9D0bsQwVfUc0w80A7LzQj1ut9rw`,
+        url: `https://www.googleapis.com/youtube/v3/search?maxResults=50&part=snippet&q=${query}&key=AIzaSyCiUmwKl8Ufw2mH16uY8PQ5vu_6rRTSc4g`,
         method: "GET"
     })
     .then(function (response) {
